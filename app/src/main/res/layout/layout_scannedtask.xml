@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_marginTop="2dp"
+    android:layout_marginBottom="2dp"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    app:contentPadding="12dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+        <LinearLayout
+            android:layout_weight="4"
+            android:padding="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:fontFamily="@font/poppins_regular"
+                android:textFontWeight="600"
+                android:textSize="12sp"
+                android:gravity="left|center"
+                android:id="@+id/tv_scanneddetails"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <TextView
+                android:fontFamily="@font/poppins_light"
+                android:textFontWeight="500"
+                android:textSize="10sp"
+                android:gravity="right|center"
+                android:id="@+id/tv_scannedtimestamp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+       </LinearLayout>
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
